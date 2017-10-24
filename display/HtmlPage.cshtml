@@ -1,0 +1,113 @@
+﻿@using WebMatrix.Data;
+@{
+    var db = Database.Open("MySqlConnectionString");
+    var selectQueryStringHoneypot = "select * from honeypots";
+    var selectQueryStringAttacks = "select * from Attacks";
+    var selectQueryStringConnections = "select * from Connections";
+    var selectQueryStringProcesses = "select * from Processes";
+    
+    
+}
+<html>
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Honeypots</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Address</th>
+        </tr>
+        @foreach (var row in db.Query(selectQueryStringHoneypot))
+        {
+            <tr>
+                <td>@row.Id</td>
+                <td>@row.Address</td>
+            </tr>
+        }
+    </table>
+
+    <h1>Attacks</h1>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Duration</th>
+            <th>Address</th>
+        </tr>
+        @foreach (var row in db.Query(selectQueryStringAttacks))
+        {
+            <tr>
+                <td>@row.TypeOfAttack</td>
+                <td>@row.Date</td>
+                <td>@row.Duration</td>
+                <td>@row.Address</td>
+            </tr>
+        }
+    </table>
+
+    <h1>Connections</h1>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Address</th>
+            <th>Attacked Ports</th>
+            <th>Country</th>
+            <th>Types Of Attacks</th>
+            <th>Network Distance</th>
+            <th>OS</th>
+            <th>Open Ports</th>
+            <th>JavascriptOS</th>
+            <th>Browser</th>
+            <th>BrowserVersion</th>
+            <th>BrowserLenguage</th>
+            <th>UsingCookies</th>
+        </tr>
+        @foreach (var row in db.Query(selectQueryStringConnections))
+        {
+            <tr>
+                <td>@row.Date</td>
+                <td>@row.Address</td>
+                <td>@row.AttackedPorts</td>
+                <td>@row.Country</td>
+                <td>@row.TypesOfAttacks</td>
+                <td>@row.NetworkDistance</td>
+                <td>@row.OS</td>
+                <td>@row.OpenPorts</td>
+                <td>@row.JavascriptOS</td>
+                <td>@row.Browser</td>
+                <td>@row.BrowserVersion</td>
+                <td>@row.BrowserLenguage</td>
+                <td>@row.UsingCookies</td>
+            </tr>
+        }
+    </table>
+    <h1>Processes</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Addresses</th>
+        </tr>
+        @foreach (var row in db.Query(selectQueryStringProcesses))
+        {
+            <tr>
+                <td>@row.ID</td>
+                <td>@row.Name</td>
+                <td>@row.Addresses</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

